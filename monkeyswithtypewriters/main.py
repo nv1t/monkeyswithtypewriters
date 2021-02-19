@@ -21,8 +21,8 @@ def parse_args():
      `"""""""""`  ,--`,--'\/\    /     ,--`,--'\/\    /
                    '-- "--'  '--'       '-- "--'  '--' '''
     )
-    parser.add_argument('-t','--time',dest='time', default=5, help="Seconds to Wait until start typing")
-    parser.add_argument('-H', '--human', dest='human', action="store_true", help="Slows down the output to 1 char per 300ms")
+    parser.add_argument('-t','--time',dest='time', default=5, help="Seconds to Wait until start typing (default 5sec)")
+    parser.add_argument('-H', '--human', dest='human', action="store_true", help="Slows down the output to 1 char per random.range(200ms,400ms)")
 
     parser.add_argument(dest='cmd', choices={'string','file'}, help="do you want to output a string, or read a file")
     parser.add_argument(dest='payload', help="String or Filepath")
