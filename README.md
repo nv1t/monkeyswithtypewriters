@@ -41,5 +41,38 @@ You can install this as well in any virtualenv by using the git+https wrapper fr
 python -m pip install git+https://github.com/nv1t/monkeyswithtypewriters
 ```
 
+## Basic Usage
+
+```plain
+-> % monkeyswithtypewriters -h
+usage: monkeyswithtypewriters [-h] [-t TIME] [-H] {file,string} payload
+
+                        .="=.                .="=.
+                      _/.-.-.\_     _      _/.-.-.\_     _
+                     ( ( o o ) )    ))    ( ( o o ) )    ))
+                      |/  "  \|    //      |/  "  \|    //
+      .-------.        \'---'/    //        \'---'/    //
+     _|~~ ~~  |_       /`"""`\\  ((         /`"""`\\  ((
+   =(_|_______|_)=    / /_,_\ \\  \\       / /_,_\ \\  \\
+     |:::::::::|      \_\\_'__/ \  ))      \_\\_'__/ \  ))
+     |:::::::[]|       /`  /`~\  |//        /`  /`~\  |//
+     |o=======.|      /   /    \  /        /   /    \  /
+     `"""""""""`  ,--`,--'\/\    /     ,--`,--'\/\    /
+                   '-- "--'  '--'       '-- "--'  '--' 
+
+positional arguments:
+  {file,string}         do you want to output a string, or read a file
+  payload               String or Filepath
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t TIME, --time TIME  Seconds to Wait until start typing
+  -H, --human           Slows down the output to 1 char per 300ms
+  ```
+
+  It should be pretty self explanatory :) 
+  The only weired feature is `-H` or `--human` with delays the output and types 1 character every 300ms (roughly). It tries to randomize the delay a little bit.
+
+
 ## Known Bugs
 * It doesn't detect if the IDE you are trying to autotype in is doing some fancy auto completion...it will completly break
