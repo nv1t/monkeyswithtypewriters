@@ -7,7 +7,7 @@ No monkeys were harmed in making this tool
 * be installed using `setup.py`
 * be runned directly from source directory if environment dependencies already satisfied
 
-- [monkeyswithtypewriter](#monkeyswithtypewriter)
+## Table of Contents
   * [Installation](#installation)
     + [Method 1. System-wide install](#method-1-system-wide-install)
     + [Method 2. Running from project directory](#method-2-running-from-project-directory)
