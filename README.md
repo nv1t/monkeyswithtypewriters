@@ -40,3 +40,6 @@ You can install this as well in any virtualenv by using the git+https wrapper fr
 ```bash
 python -m pip install git+https://github.com/nv1t/monkeyswithtypewriters
 ```
+
+## Known Bugs
+* It doesn't detect if the IDE you are trying to autotype in is doing some fancy auto completion...it will completly break
