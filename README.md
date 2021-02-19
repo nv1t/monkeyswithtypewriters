@@ -33,3 +33,10 @@ Now script can be run right from source directory.
 #### Userland pip
 
 Both previous methods can be run with `--user` option of `pip` installer. In this case superuser privileges are not required and package shall be installed to user home directory. So, for first method script executabled will appear in `~/.local/bin`.
+
+#### Tipp: Install from Github
+
+You can install this as well in any virtualenv by using the git+https wrapper from pip
+```bash
+python -m pip install git+https://github.com/nv1t/monkeyswithtypewriters
+```
